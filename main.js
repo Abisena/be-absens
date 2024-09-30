@@ -6,6 +6,7 @@ const axios = require("axios"); // Untuk mengirim request ke API eksternal
 const app = express();
 const prisma = new PrismaClient();
 
+app.use(cors());
 app.use(express.json());
 
 const JWT_SECRET = "Absen-guru"; // Secret untuk JWT
