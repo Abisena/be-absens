@@ -59,7 +59,6 @@ async function main() {
   // Tambahkan data pengguna dummy
   const user1 = await prisma.user.create({
     data: {
-      name: "abisena",
       email: "test1@example.com",
       password: hashedNip, // NIP di-hash sebagai password
     },
@@ -67,7 +66,6 @@ async function main() {
 
   const user2 = await prisma.user.create({
     data: {
-      name: "guna",
       email: "test2@example.com",
       password: hashedNip,
     },

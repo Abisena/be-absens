@@ -25,13 +25,13 @@ model Absensi {
   user        User     @relation(fields: [userId], references: [id])
 }
 
-model OfficeLocation {
-  id        Int      @id @default(autoincrement())
-  name      String
-  latitude  Float
-  longitude Float
-  radius    Float
-}
+// model OfficeLocation {
+//   id        Int      @id @default(autoincrement())
+//   name      String
+//   latitude  Float
+//   longitude Float
+//   radius    Float
+// }
 
 
 enum Status {
